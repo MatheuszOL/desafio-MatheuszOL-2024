@@ -40,8 +40,7 @@ Essa sendo a finalização de "analiseRecintos" é a parte onde calcula o espaç
 ![Snap](https://github.com/user-attachments/assets/deca8442-9493-4844-a72e-aa4afc3cc670)
 
 O trecho final do código adiciona informações sobre recintos disponíveis a lista de recintos viáveis, detalhando o numero do recinto, o espaço livre restante e o tamanho total do recinto. Se não houver recintos livres na lista a função retorna com uma mensagem de erro informando que não há recintos adequados. Caso o contrário, ela retorna a lista de recintos viáveis com os detalhes.
-
-Finalizando o codigo exporta a classe "RecintosZoo" para que possa ser utilizada em outras partes do programa(teste).
+Finalizando o codigo exporta a classe "RecintosZoo" para que possa ser utilizada em outras partes do programa.
 
 
 
