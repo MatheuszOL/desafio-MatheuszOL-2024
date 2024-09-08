@@ -1,6 +1,6 @@
 class RecintosZoo {
     constructor() {
-        //defindindo os dados do zoologico, especificando bioma, tamanho etc... 
+        //Definindo os dados do zoologico, especificando bioma, tamanho etc... 
         this.recintos = [
             { numero: 1, bioma: 'savana', tamanho: 10, animaisExistentes: [{ especie: 'MACACO', quantidade: 3 }] },
             { numero: 2, bioma: 'floresta', tamanho: 5, animaisExistentes: [] },
@@ -21,7 +21,7 @@ class RecintosZoo {
     }
 
     analisaRecintos(animalEspecie, quantidade) {
-        //valida a espécie e a quantidade do animal
+        //Valida a espécie e a quantidade do animal
         if (!this.animais[animalEspecie]) {
             return { erro: "Animal inválido", recintosViaveis: null };
         }
@@ -34,7 +34,7 @@ class RecintosZoo {
         let recintosViaveis = [];
 
         for (let recinto of this.recintos) {
-            //verificando se o bioma do recinto é equivalente para o animal.
+            //Verificando se o bioma do recinto é equivalente para o animal.
             if (!animalInfo.biomas.includes(recinto.bioma) && !(recinto.bioma === "savana e rio" && animalInfo.biomas.includes("savana"))) {
                 continue;
             }
